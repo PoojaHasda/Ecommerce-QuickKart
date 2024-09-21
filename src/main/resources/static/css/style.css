@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+.card-sh {
+	box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cat-div {
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.error {
+	color: red;
+}
+
+.navbar, .container-fluid {
+    background-color: #457b9d !important; /* Replace with your preferred color */
+  }
+  
+  .nav-link {
+    color: #FFFFFF !important; /* Change the text color of navbar links */
+  }
+  
+  .nav-link:hover {
+    color: #531a74 !important; /* Change the hover color */
+  }
+
+  .category-title {
+    font-family: 'Poppins', sans-serif; /* Choose a modern font */
+    font-weight: bold;
+    color: #333; /* Darker shade for contrast */
+    text-transform: uppercase; /* Make the text uppercase */
+    letter-spacing: 2px; /* Adds spacing between letters */
+    padding: 15px 0;
+    background-color: #f1f1f1; /* Light background color */
+    width: 100%; /* Full width */
+    display: block;
+    text-align: center; /* Center text inside the full-width block */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 0; /* Remove default margin */
+}
+
