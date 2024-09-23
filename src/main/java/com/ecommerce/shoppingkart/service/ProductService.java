@@ -10,8 +10,6 @@ import com.ecommerce.shoppingkart.Model.Product;
 
 public interface ProductService {
 
-	
-
 	public Product saveProduct(Product product);
 
 	public List<Product> getAllProducts();
@@ -22,4 +20,15 @@ public interface ProductService {
 
 	public Product updateProduct(Product product, MultipartFile file);
 
+	public List<Product> getAllActiveProducts(String category);
+
+	public List<Product> searchProduct(String ch);
+
+	public Page<Product> getAllActiveProductPagination(Integer pageNo, Integer pageSize, String category);
+
+	public Page<Product> searchProductPagination(Integer pageNo, Integer pageSize, String ch);
+
+	public Page<Product> getAllProductsPagination(Integer pageNo, Integer pageSize);
+
+	public Page<Product> searchActiveProductPagination(Integer pageNo, Integer pageSize, String category, String ch);
 }
