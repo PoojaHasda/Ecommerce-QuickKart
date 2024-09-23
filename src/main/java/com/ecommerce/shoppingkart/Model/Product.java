@@ -1,6 +1,6 @@
 package com.ecommerce.shoppingkart.Model;
 
-import com.ecommerce.shoppingkart.service.implementation.ProductServiceImpl;
+import com.ecommerce.shoppingkart.service.implementation.*;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -12,20 +12,16 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
-@Setter
-@Getter
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
+@Entity
 public class Product {
 
-	public Product saveProduct(ProductServiceImpl productServiceImpl) {
-    	return productServiceImpl.productRepository.save(this);
-    }
-
-    @Id
+	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private int id;
 
 	@Column(length = 500)
 	private String title;
@@ -40,11 +36,9 @@ public class Product {
 	private int stock;
 
 	private String image;
+	
+	 private int discount;
+	 private Double discountPrice;
+	 private Boolean isActive;
 
-	private int discount;
-	
-	private Double discountPrice;
-	
-	private Boolean isActive;
-	
 }
