@@ -32,7 +32,7 @@ public class CustomUser implements UserDetails {
 
 	@Override
 	public String getUsername() {
-		return user.getEmail();
+		return user.getUsername();
 	}
 
 	@Override
@@ -42,7 +42,7 @@ public class CustomUser implements UserDetails {
 
 	@Override
 	public boolean isAccountNonLocked() {
-		return user.getAccountNonLocked();
+		return true;
 	}
 
 	@Override
@@ -52,7 +52,7 @@ public class CustomUser implements UserDetails {
 
 	@Override
 	public boolean isEnabled() {
-		return user.getIsEnable();
+		return true;
 	}
 
 }

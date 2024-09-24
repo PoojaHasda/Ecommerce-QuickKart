@@ -8,18 +8,19 @@ import org.springframework.data.domain.Pageable;
 
 import com.ecommerce.shoppingkart.Model.Category;
 public interface CategoryService {
-    public com.ecommerce.shoppingkart.Model.Category saveCategory(com.ecommerce.shoppingkart.Model.Category category);
+	public Category saveCategory(Category category);
 
 	public Boolean existCategory(String name);
 
-	public List<com.ecommerce.shoppingkart.Model.Category> getAllCategory();
+	public List<Category> getAllCategory();
 
 	public Boolean deleteCategory(int id);
 
-	public com.ecommerce.shoppingkart.Model.Category getCategoryById(int id);
+	public Category getCategoryById(int id);
 
 	public List<Category> getAllActiveCategory();
 
-	public Page<Category> getAllCategoryPagination(Integer pageNo,Integer pageSize);
+	public Page<Category> getAllCategorPagination(Integer pageNo,Integer pageSize);
+
 
 }
